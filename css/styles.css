@@ -48,17 +48,17 @@ html {
 }
 
 body, p {
-	color: #f1f1f8; 
+	color: #000000; 
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
-	color: #f1f1f8;
+	color: #000000;
 	font: 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 
 .p-small {
-	color: #f1f1f8;
+	color: #000000;
 	font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
 }
 
@@ -76,22 +76,22 @@ body, p {
 }
 
 h1 {
-	color: #f1f1f8;
+	color: #fff;
 	font: 700 2.5rem/2.875rem "Montserrat", sans-serif;
 }
 
 h2 {
-	color: #f1f1f8;
+	color: #000000;
 	font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
 }
 
 h3 {
-	color: #f1f1f8;
+	color: #000000;
 	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
 }
 
 h4 {
-	color: #f1f1f8;
+	color: #000000;
 	font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
 }
 
@@ -101,7 +101,7 @@ h5 {
 }
 
 h6 {
-	color: #f1f1f8;
+	color: #000000;
 	font: 700 1rem/1.5rem "Montserrat", sans-serif;
 }
 
@@ -134,9 +134,9 @@ a.white {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #00c9db;
+	border: 0.125rem solid #fe5f55;
 	border-radius: 2rem;
-	background-color: #00c9db;
+	background-color: #fe5f55;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -145,16 +145,16 @@ a.white {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #00c9db;
+	color: #fe5f55;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
-	border: 0.125rem solid #00c9db;
+	border: 0.125rem solid #000000;
 	border-radius: 2rem;
-	background-color: #00c9db;
+	background-color: #000000;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -163,8 +163,9 @@ a.white {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #00c9db;
+	color: #000000;
 	text-decoration: none;
+	border: transparent;
 }
 
 .btn-solid-lg .fab {
@@ -584,6 +585,8 @@ input[type='checkbox'] {
 	bottom: 0;
 	left: 0;
 	background: #2f2c3d;
+	background: -webkit-linear-gradient(315deg, #ee0978 0%, #ff6a00 100%);
+	background: linear-gradient(135deg, #ee0978 0%, #ff6a00 100%);
 }
 
 .spinner {
@@ -638,7 +641,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #4633af;
+	background-color: #000000;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.75rem/2rem "Montserrat", sans-serif;
 	transition: all 0.2s ease;
@@ -671,7 +674,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #00c9db;
+	color: #fe5f55;
 }
 
 /* Dropdown Menu */
@@ -699,7 +702,7 @@ input[type='checkbox'] {
 	margin-top: 0;
 	border: none;
 	border-radius: 0.25rem;
-	background-color: #4633af;
+	background-color: #000000
 }
 
 .navbar-custom .dropdown-item {
@@ -708,7 +711,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #4633af;
+	background-color: #000000;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -716,7 +719,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
-	color: #00c9db;
+	color: #000000;
 }
 
 .navbar-custom .dropdown-items-divide-hr {
@@ -760,9 +763,19 @@ input[type='checkbox'] {
 /*********************/
 /*    04. Header     */
 /*********************/
-.header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+
+.headerbackground{
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header.jpg') center center no-repeat;
 	background-size: cover;
+}
+
+.header {
+	opacity: 0.8;
+	background: -webkit-linear-gradient(315deg, #ee0978 0%, #ff6a00 100%);
+	background: linear-gradient(135deg, #ee0978 0%, #ff6a00 100%);
+	/* background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header.jpg') center center no-repeat; */
+	background-size: cover;
+	
 }
 
 .header .header-content {
@@ -780,7 +793,7 @@ input[type='checkbox'] {
 }
 
 .header #js-rotating {
-	color: #40e0ee;
+	color: #000000;
 }
 
 .header .p-large {
@@ -792,6 +805,12 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 }
 
+#appTitle{
+    color: #FF3A00;
+    padding: 10px 10px 5px 10px;
+    line-height: 60px;
+    background: #ffffff;
+}
 
 /****************************/
 /*     05. Testimonials     */
@@ -860,7 +879,7 @@ input[type='checkbox'] {
 .tabs {
 	padding-top: 6.5rem;
 	padding-bottom: 4.25rem;
-	background-color: #2f2c3d;
+	background-color: #fff;
 }
 
 .tabs h2 {
@@ -886,7 +905,7 @@ input[type='checkbox'] {
 	border: none;
 	border-bottom: 0.1875rem solid #f1f1f8;
 	border-radius: 0;
-	color: #f1f1f8;
+	color: #b5bcc4;
 	font: 700 1rem/1.75rem "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s ease;
@@ -894,9 +913,9 @@ input[type='checkbox'] {
 
 .tabs .nav-link.active,
 .tabs .nav-link:hover {
-	border-bottom: 0.1875rem solid #00c9db;
+	border-bottom: 0.1875rem solid #fe5f55;
 	background-color: transparent;
-	color: #00c9db;
+	color: #fe5f55;
 }
 
 .tabs .nav-link .fas {
@@ -926,7 +945,7 @@ input[type='checkbox'] {
 	width: 3.5rem;
 	height: 3.5rem;
 	border-radius: 50%;
-	background-color: #00c9db;
+	background-color: #fe5f55;
 	text-align: center;
 	vertical-align: top;
 }
@@ -1112,7 +1131,7 @@ input[type='checkbox'] {
 .basic-2 {
 	padding-top: 8rem;
 	padding-bottom: 3.5rem;
-	background-color: #262431;
+	background-color:rgba(0, 0, 0, 0.1);
 }
 
 .basic-2 img {
@@ -1134,7 +1153,7 @@ input[type='checkbox'] {
 .basic-3 {
 	padding-top: 3.5rem;
 	padding-bottom: 7.25rem;
-	background-color: #262431;
+	background-color:rgba(0, 0, 0, 0.1);
 }
 
 .basic-3 .text-container {
@@ -1235,7 +1254,7 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.875rem;
-	background-color: #2f2c3d;
+	background-color:rgba(0, 0, 0, 0.1);
 }
 
 .slider-2 .slider-container {
@@ -1279,7 +1298,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
+	background: #fff;
 	background-size: cover; 
 }
 
@@ -1300,7 +1319,61 @@ input[type='checkbox'] {
 	margin-right: 0.5rem;
 	margin-bottom: 1.25rem;
 }
+.basic-4 .main-developer-details{
 
+	position: relative;
+	display: inline-block; /* Make the width of box same as image */
+}
+
+.basic-4 .main-developer-details-name{
+	/* z-index: 999;
+	top:40%;
+	color: #ffffff;
+	padding: 10px 10px 5px 10px;
+	font-size: larger;
+	font-weight: 700;
+    line-height: 40px;
+	background:  linear-gradient(135deg, #ee0978 0%, #ff6a00 100%); */
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;        
+	text-align: center;
+	top:89.5%;
+	background: linear-gradient(135deg, #ee0978 0%, #ff6a00 100%);
+	opacity: 0.8;
+	color: #fff;
+	padding: 10px 10px 5px 10px;
+	font-size: larger;
+	font-weight: 700;
+    line-height: 40px;
+	
+}
+
+.contactme .fa-stack {
+	margin-bottom: 0.75rem;
+	margin-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.contactme .fa-stack .fa-stack-1x {
+    color: #ffffff;
+	transition: all 0.2s ease;
+}
+
+.contactme .fa-stack .fa-stack-2x {
+	color: #fe5f55;
+	transition: all 0.2s ease;
+}
+
+.contactme .fa-stack:hover .fa-stack-1x {
+	color: #000000;
+}
+
+.contactme .fa-stack:hover .fa-stack-2x {
+    color: transparent;
+}
 
 /**************************/
 /*     12. Statistics     */
@@ -1425,7 +1498,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #262431;
+	background-color: #000000;
 	text-align: center;
 }
 
@@ -1447,7 +1520,7 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #00c9db url("../images/up-arrow.png") no-repeat center 47%;
+	background: #000000 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
@@ -1573,13 +1646,13 @@ a:hover.back-to-top {
 	
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: #00c9db;
+		color: #000000;
 	}
 
 	.navbar-custom.top-nav-collapse {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		background-color: #4633af;
+		background-color: #000000;
 	}
 
 	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1592,7 +1665,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
 	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-		color: #00c9db;
+		color: #fe5f55;
 	}
 
 	.navbar-custom .dropdown-menu {
@@ -1902,6 +1975,8 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 		text-align: left;
 	}
+
+	
 	/* end of download */
 
 
